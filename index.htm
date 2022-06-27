@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper💣Game</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Indie+Flower&family=Montserrat:wght@100&family=Pacifico&family=Raleway:wght@100&display=swap');
+    </style> 
+
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="gameover">
+
+            <h1 class="lose">
+                Oops! Better Luck Next Time.😢
+            </h1>
+            <h1 class="win">
+                Congrats! You won.😁
+            </h1>
+            <span>CTRL+R To Play Again.</span>
+        </div>
+
+        <div class="header">
+            <h1>
+                Total Bombs: <span id="bomb-total">0</span>
+            </h1>
+            <h3 id="timer">
+                <span class="time hour">0</span>:
+                <span class="time min">0</span>:
+                <span class="time sec">0</span>
+            </h3>
+        </div>
+        <div class="welcome-modal">
+            <h1>Welcome! To Minesweeper💣Game</h1>
+            <div class="bomb-btns">
+                <button class="bomb-btn" onclick="totalBombs(10)">10-💣</button>
+                <button class="bomb-btn" onclick="totalBombs(15)">15-💣</button>
+                <button class="bomb-btn" onclick="totalBombs(25)">25-💣</button>
+            </div>
+        </div>
+
+        <div class="board">
+            
+           
+        </div>
+        <button class="flag-false" id="flag"">🏴</button>
+
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
