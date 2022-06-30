@@ -154,7 +154,7 @@ function checkMine (row,col) {
 
      if(tilesClicked === ((10*10)-total_mines)) {
          gameOver = true
-         document.getElementsByClassName('win')[0].stye.display = 'block'
+         document.getElementsByClassName('win')[0].style.display = 'block'
          document.getElementsByClassName('gameover')[0].style.display = 'block'
 
          return
